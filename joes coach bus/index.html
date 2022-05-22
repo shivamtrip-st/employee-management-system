@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFirmly" content="true">
+    <meta charset="utf-8">
+    <title> joe's coaches</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+    <div class="nav-wrapper">
+        <nav>
+            
+            <ul class="nav-list">
+                <img id="icon" src="images/icon.jpg" alt="" width=6%>
+                <li class="nav-item">
+                    <a href="index.html">Account</a>
+                    <li> <a href="#">Logout</a></li>
+                </li>
+            </ul>
+        </nav>  </div>
+        <div class ="employees">
+            <h2>employee</h2>
+            <div class="employee-list">
+                <li>
+                    <div class="employee-card" id="employee1">
+                      <img class="user-img" src="images/user (1).jpeg" alt="" width=45%>
+                      <span>
+                          <div class ="employment-details" id="employee1-details">
+                         <span class="name-format">Ashton</span>
+                         <span class="name-format">Jacob</span>
+                         <br>
+                         <span>Developer</span>
+                         <br>
+                         <span>Tech Department</span>
+                         <br>
+                         <span>Ajacob@jcoaches.com</span>
+                         <br>
+                         <span>$40000</span>
+
+                          </div>
+                      </span>  
+                    </div>
+                </li>
+                <li>
+                    <div class="employee-card" id="employee1">
+                      <img class="user-img" src="images/user (2).jpg" alt="" width=45%>
+                      <span>
+                          <div class ="employment-details" id="employee1-details">
+                         <span class="name-format">Pamela</span>
+                         <span class="name-format">Peterson</span>
+                         <br>
+                         <span>Head of marketing</span>
+                         <br>
+                         <span>Marketing Department</span>
+                         <br>
+                         <span>patcolob@jcoaches.com</span>
+                         <br>
+                         <span>$50000</span>
+
+                          </div>
+                      </span>  
+                    </div>
+                </li>
+                <li>
+                    <div class="employee-card" id="employee1">
+                      <img class="user-img" src="images/user (3).jpg" alt="" width=55%>
+                      <span>
+                          <div class ="employment-details" id="employee1-details">
+                         <span class="name-format">Joe</span>
+                         <span class="name-format">Adams</span>
+                         <br>
+                         <span>CEO</span>
+                         <br>
+                         <span>Executive Department</span>
+                         <br>
+                         <span>joeadams@jcoaches.com</span>
+                         <br>
+                         <span>$80000</span>
+
+                          </div>
+                      </span>  
+                    </div>
+                </li>
+               
+                <li>
+                    <div class="employee-card" id="employee1">
+                      <img class="user-img" src="images/user (1).jfif" alt="" width=55%>
+                      <span>
+                          <div class ="employment-details" id="employee1-details">
+                         <span class="name-format">Jessica</span>
+                         <span class="name-format">johanson</span>
+                         <br>
+                         <span>social marketing</span>
+                         <br>
+                         <span>Marketing Department</span>
+                         <br>
+                         <span>jessjohan@jcoaches.com</span>
+                         <br>
+                         <span>$54000</span>
+
+                          </div>
+                      </span>  
+                    </div>
+                </li>
+
+
+            </div>
+
+        </div>
+        
+<div class="Interviews">
+    <h2>Upcoing Interviews</h2>
+    <li>
+        <div class="list-item">
+            <h3>Marketing</h3>
+            <p>
+                social marketing expert
+            </p>
+            <button class="accept-btn" type="button" name="button">Accept</button>
+            <button class="Reject-btn" type="button" name="button">Reject</button>
+
+        </div>
+    </li>
+    <li>
+        <div class="list-item">
+            <h3>Driver</h3>
+            <p>
+               advanced coach driver
+            </p>
+            <button class="accept-btn" type="button" name="button">Accept</button>
+            <button class="Reject-btn" type="button" name="button">Reject</button>
+
+        </div>
+    </li>
+    <li>
+        <div class="list-item">
+            <h3>web developer</h3>
+            <p>
+               Full stack developer
+            </p>
+            <button class="accept-btn" type="button" name="button">Accept</button>
+            <button class="Reject-btn" type="button" name="button">Reject</button>
+
+        </div>
+    </li>
+
+
+
+
+</div>
+
+<div id="employeemodal" class="modal">
+    <div class="modal-content">
+        <header class="modal-header">
+            <div class="modal-header-content">
+                <span >Add employee</span>
+            </div>
+        </header>
+        <div class="modal-container">
+            <label for="fname">First name</label>
+            <input type="text" id="name">
+            <br>
+            <label for="fname">Last name</label>
+            <input type="text" id="surname">
+            <br>
+            <label for="fname">position</label>
+            <input type="text" id="position">
+            <br>
+            <label for="fname">Department</label>
+            <input type="text" id="department">
+            <br>
+            <label for="fname">Email</label>
+            <input type="text" id="email">
+            <br>
+            <label for="fname">Salary</label>
+            <input type="text" id="salary">
+            <br>
+            <button id="confirm-btn" type="button" name="button" onclick="addEmployee()">Confirm</button>
+        </div>
+        <footer class="modal-footer">
+
+        </footer>
+    </div>
+</div>
+<div id="interviewModal" class="modal">
+    <div class="modal-content">
+        <header class="modal-header">
+            <div class="modal-header-content">
+                <span >Add interview</span>
+            </div>
+        </header>
+        <div class="modal-container">
+            <labe for="fname">Department</labe>
+            <input type="text" id="int-department">
+            <br>
+            <labe for="fname">position</labe>
+            <input type="text" id="int-position">
+            <br>
+            <button id="confirmIntbtn" type="button" name="button" onclick="addInterview()">Confirm</button>
+
+</div>
+<footer class="modal-footer">
+
+</footer>
+</div>
+</div>
+<button id="btn" type="button" name="button" onclick="showAddIntModal()">Add interview</button>
+<button id="btn" type="button" name="button" onclick="showAddEmpModal()">Addd employee</button>
+<script type="text/javascript" src="main.js"></script>
+</body>
+
+
+</html>
